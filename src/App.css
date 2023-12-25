@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 1rem;
+}
+.notification{
+  color: var(--3---Very-Dark-Grey-Blue, #1C202B);
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.icon{
+  width: 32px;
+  height: 25px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--1---Blue, #0A327B);
+  text-align: center;
   color: white;
+  color: var(--9---White, #FFF);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.mark-all{
+  color: var(--4---Dark-Grey-Blue, #5E6778);
+  text-align: right;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mark-all:hover{
+  color: blue;
+}
+
+
+img {
+  width: 39px;
+  height: 39px;
+}
+
+.container{
+  display: flex;
+  min-width: 343px;
+  max-width: 720px;
+  min-height: 89px;
+  border-radius: 8px;
+  margin: 1rem;
+  margin-left: 1rem;
+}
+
+.container img{
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.container p {
+  color: var(--4---Dark-Grey-Blue, #5E6778);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top:1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.container .name{
+  color: var(--3---Very-Dark-Grey-Blue, #1C202B);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.container .name:hover{
+  color: var(--1---Blue, #0A327B);
+}
+.container .p-span{
+  color: var(--4---Dark-Grey-Blue, #5E6778);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container .time{
+  color: var(--5---Grey-Blue, #939CAD);
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.blue-background{
+  background: var(--8---Snow, #F7FAFD);
+  border-radius: 8px;
+
+}
+.wrapper{
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 720px){
+  body{
+    background: #F9FAFD;
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper{
+    width: 730px;
+    height: 839px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--9---White, #FFF);
+    box-shadow: 0px 20px 60px 0px rgba(73, 97, 168, 0.05);
+    margin: 0 auto;
+    margin-top: 30px;
   }
+
+
 }
